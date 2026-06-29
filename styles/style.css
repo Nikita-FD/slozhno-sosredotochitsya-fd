@@ -14,12 +14,7 @@ header {
   height: 100vh;
   min-height: 668px;
   padding: 10px;
-  margin-block-end: 0;
-
-  grid-template-areas:
-    "menu"
-    "title"
-    "text";
+  grid-template-rows: min-content 1fr min-content 54px min-content 56px;
   /* outline: 2px solid red; */
 }
 
@@ -79,8 +74,8 @@ header {
 }
 
 .header__theme-menu {
-  grid-area: menu;
-  margin-top: 39px;
+  grid-row: 1;
+  margin-block-start: 39px;
   justify-self: end;
 }
 
@@ -107,14 +102,12 @@ header {
 
 .header__title {
   margin: 0;
-  grid-area: title;
-  margin-block-start: 100px;
+  grid-row: 3;
   align-self: start;
   color: #DB00FF;
   text-shadow: 4px 4px 0 var(--accent-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  margin-bottom: 0px;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
 }
@@ -126,13 +119,11 @@ header {
 }
 
 .header__text {
-  grid-area: text;
+  grid-row: 5;
   margin: 0;
-  margin-block-start: 54px;
   color: #000028;
   font-weight: bold;
   inline-size: 100%;
-  align-self: start;
   justify-self: end;
   font-size: 18px;
 }
@@ -140,6 +131,7 @@ header {
 .content {
   padding-block-start: 40px;
   background-color: var(--bg-color);
+  padding: 10px;
 }
 
 .content-section__title {
@@ -188,6 +180,7 @@ header {
 }
 
 .footer {
+  padding: 10px;
   height: 100vh;
   min-height: 668px;
   display: grid;
