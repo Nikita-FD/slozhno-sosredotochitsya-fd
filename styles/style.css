@@ -88,7 +88,6 @@ header {
 .header__rec::after {
   display: inline-block;
   content: "";
-  margin-left: 15px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -219,7 +218,7 @@ header {
   }
   .header__text {
     width: 491px;
-  }  
+  }
 }
 
 .content {
