@@ -4,7 +4,14 @@
 */
 :root {
   --background-image: url(../images/cover-image-dark.png);
+  --header-text-color: #000028;
+  --section-card-title: #000028;
+  --subtitle-color: #000028;
+  --title-color: #DB00FF;
+  --title-shadow-color: #ff0070;
+  --footer-title-shadow-color: var(--title-shadow-color);
   --accent-color: #ff0070;
   --text-color: #F1B2CE;
+  --decorated-text-color: var(--accent-color);
   --bg-color: #000028;
 }
