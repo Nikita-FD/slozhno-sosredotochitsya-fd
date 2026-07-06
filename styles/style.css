@@ -252,12 +252,12 @@ header {
   }
 
   .content-section_type_factors .content-section__title {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 1 / -1;
+    grid-row: auto;
   }
 
   .content-section_type_factors .content-section__card {
-    grid-row: 2;
+    grid-row: auto;
     grid-column: auto;
   }
 }
